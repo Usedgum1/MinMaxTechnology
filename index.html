@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinMax Technology</title>
+    
+    <link rel="stylesheet" href="minmaxcss.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- SINGLE NAVIGATION HEADER -->
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo" onclick="showPage('home')">
+                    <div class="logo-icon">
+						<img src="images/favicon.png" alt="Modern Technology Interaction" width="100"/>
+                    </div>
+                    <span>MinMax Technology</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" onclick="showPage('home')" class="active">Home</a>
+                    <a href="#" onclick="showPage('about')">About</a>
+                    <a href="#" onclick="showPage('services')">Services</a>
+					<a href="#" onclick="showPage('casestudies')">Case Studies</a>
+                    <a href="#" onclick="showPage('contact')">Contact</a>
+					
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="images/MainLogo.png" alt="Modern Technology Interaction" />
+                    </div>
+                    <div class="hero-content">
+                        <h1>Welcome to your software solution</h1>
+                        <p>We design and build automation, AI, and cloud systems that remove busywork, integrate your stack, and turn data into decisions—so teams can move in weeks, not quarters.</p>
+                        <a href="#" class="cta-button" onclick="showPage('about')">Learn More</a>
+                    </div>
+                </section>
+
+				<section class="features">
+				  <div class="feature-card glass">
+					<div class="feature-icon">🧠</div>
+					<h3>AI Where It Fits</h3>
+					<p>Practical AI/ML for real outcomes—risk scoring, workflow copilots, and smarter decisions without the hype.</p>
+				  </div>
+
+				  <div class="feature-card glass">
+					<div class="feature-icon">⚙️</div>
+					<h3>Automation First</h3>
+					<p>Eliminate busywork with robust automation across data intake, approvals, testing, and deployments.</p>
+				  </div>
+
+				  <div class="feature-card glass">
+					<div class="feature-icon">☁️</div>
+					<h3>Cloud-Native Scale</h3>
+					<p>AWS/Azure/GCP architectures that scale on demand, cut costs, and stay resilient by design.</p>
+				  </div>
+
+				  <div class="feature-card glass">
+					<div class="feature-icon">🔗</div>
+					<h3>Seamless Integrations</h3>
+					<p>APIs that just work—payment rails, ERPs, CRMs, data lakes, and partner systems with clear SLAs.</p>
+				  </div>
+
+				  <div class="feature-card glass">
+					<div class="feature-icon">🛡️</div>
+					<h3>Security & Compliance</h3>
+					<p>Security baked in: IAM, encryption, audit trails, and processes aligned to SOC 2, HIPAA, GDPR.</p>
+				  </div>
+
+				  <div class="feature-card glass">
+					<div class="feature-icon">🚀</div>
+					<h3>Faster Time-to-Value</h3>
+					<p>Modular frameworks, proven playbooks, and CI/CD to ship in weeks—not quarters.</p>
+				  </div>
+
+				  <div class="feature-card glass">
+					<div class="feature-icon">📊</div>
+					<h3>Data & Analytics</h3>
+					<p>From clean pipelines to BI dashboards—measure performance, spot trends, and act with confidence.</p>
+				  </div>
+
+				  <div class="feature-card glass">
+					<div class="feature-icon">🤝</div>
+					<h3>Transparent Delivery</h3>
+					<p>Clear roadmaps, measurable milestones, and documentation so teams can own it on day one.</p>
+				  </div>
+				</section>
+
+            </div>
+        </div>
+    </div>
+
+   <!-- ABOUT PAGE -->
+	<div id="about" class="page">
+		<div class="container">
+			<div class="content-wrapper">
+				<section class="about-content">
+				<div class="about-text glass" style="grid-column:1 / -1;max-width:900px;margin:0 auto;text-align:center;">
+					<h2>Our Philosophy</h2>
+					<p>At MinMax Technology, everything we build starts with three pillars: <strong>Honesty</strong>, <strong>Transparency</strong>, and <strong>Affordability</strong>.</p>
+					<p>Honesty means we give you clear, straightforward answers — even if that means recommending a simpler or cheaper path, or no path at all. We won't waste your time. Transparency means no hidden agendas, no wasted time or money — you’ll always understand what’s being built, how it works, and what it costs. Affordability means we design solutions that deliver measurable value without bloated budgets or unnecessary complexity.</p>
+					<p>We believe technology should be a time-saver, not a time sink. Whether it’s a quick internal automation or a full enterprise platform, our focus is on eliminating busywork, reducing errors, and giving teams back the hours they need to do their best work.</p>
+					<p>We don’t chase short-term wins or one-off deals. We build lasting partnerships by delivering solutions you’ll want to keep, expand, and trust for years to come.</p>
+				</div>
+				</section>
+
+
+ <!-- Team section temporarily disabled
+				<section class="team-section">
+					<h2>Meet Our Team</h2>
+					<div class="team-grid">
+						<div class="team-member glass">
+							<div class="team-avatar">👨‍💼</div>
+							<h3>John Anderson</h3>
+							<p class="role">CEO & Founder</p>
+							<p class="bio">Visionary leader with 15+ years in digital innovation, driving our mission to create exceptional user experiences.</p>
+							<div class="team-social">
+								<a href="#" title="Email">📧</a>
+								<a href="#" title="LinkedIn">💼</a>
+								<a href="#" title="Twitter">🐦</a>
+							</div>
+						</div>
+						<div class="team-member glass">
+							<div class="team-avatar">👩‍🎨</div>
+							<h3>Sarah Chen</h3>
+							<p class="role">Creative Director</p>
+							<p class="bio">Award-winning designer specializing in modern UI/UX, bringing artistic vision to every project.</p>
+							<div class="team-social">
+								<a href="#" title="Email">📧</a>
+								<a href="#" title="LinkedIn">💼</a>
+								<a href="#" title="Portfolio">🎨</a>
+							</div>
+						</div>
+						<div class="team-member glass">
+							<div class="team-avatar">👨‍💻</div>
+							<h3>Michael Torres</h3>
+							<p class="role">Lead Developer</p>
+							<p class="bio">Full-stack expert passionate about clean code and innovative web technologies.</p>
+							<div class="team-social">
+								<a href="#" title="Email">📧</a>
+								<a href="#" title="LinkedIn">💼</a>
+								<a href="#" title="GitHub">💻</a>
+							</div>
+						</div>
+						<div class="team-member glass">
+							<div class="team-avatar">👩‍💻</div>
+							<h3>Emma Wilson</h3>
+							<p class="role">Senior Developer</p>
+							<p class="bio">Frontend specialist with expertise in React and modern JavaScript frameworks.</p>
+							<div class="team-social">
+								<a href="#" title="Email">📧</a>
+								<a href="#" title="LinkedIn">💼</a>
+								<a href="#" title="GitHub">💻</a>
+							</div>
+						</div>
+						<div class="team-member glass">
+							<div class="team-avatar">👨‍🎨</div>
+							<h3>David Kim</h3>
+							<p class="role">UX Designer</p>
+							<p class="bio">User experience expert focused on creating intuitive and accessible digital products.</p>
+							<div class="team-social">
+								<a href="#" title="Email">📧</a>
+								<a href="#" title="LinkedIn">💼</a>
+								<a href="#" title="Behance">🎨</a>
+							</div>
+						</div>
+						<div class="team-member glass">
+							<div class="team-avatar">👩‍💼</div>
+							<h3>Lisa Martinez</h3>
+							<p class="role">Project Manager</p>
+							<p class="bio">Certified PMP with a track record of delivering complex projects on time and budget.</p>
+							<div class="team-social">
+								<a href="#" title="Email">📧</a>
+								<a href="#" title="LinkedIn">💼</a>
+								<a href="#" title="Calendar">📅</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				 -->
+			</div>
+		</div>
+	</div>
+
+
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page">
+        <div class="container">
+            <div class="content-wrapper" style="text-align:center;">
+				<section class="service-card glass" style="margin-bottom: 2rem; text-align:center;">
+				  <h1>Our Services</h1>
+				  <p></p>
+				  <h2>From automation and AI to cloud, integrations, and enterprise platforms — we deliver technology that streamlines operations, reduces costs, and accelerates growth.</h2>
+				</section>
+                <section class="services-grid">
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🎨</div> <!-- Fits already -->
+							<h3>Custom Software Development</h3>
+						</div>
+						<p>Web Apps (Java, .NET, Python, PHP), Mobile Apps (iOS, Android, Flutter), Desktop (Electron, Qt), Cross-platform, Legacy Migration. </p>
+					</div>
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">💻</div> <!-- Fits already -->
+							<h3>Enterprise Application Development</h3>
+						</div>
+						<p>ERP/CRM/HRMS/DMS systems, automation tools, Salesforce/Zoho/HubSpot, workflow engines. </p>
+					</div>
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">☁️</div> <!-- Changed from 📱 to cloud -->
+							<h3>Cloud Services & Infrastructure</h3>
+						</div>
+						<p>AWS, Azure, GCP; cloud migration, serverless apps, IaC with Terraform/CDK, cost optimization. </p>
+					</div>
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🚀</div> <!-- Fits already -->
+							<h3>DevOps, SRE & Automation</h3>
+						</div>
+						<p>CI/CD, Docker, Kubernetes, monitoring (Prometheus, ELK), SRE practices, chaos engineering. </p>
+					</div>
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🤖</div> <!-- Changed from ☁️ to robot -->
+							<h3>Artificial Intelligence & Machine Learning</h3>
+						</div>
+						<p>Forecasting, NLP (chatbots, sentiment), ML ops, recommendation engines, AI for verticals. </p>
+					</div>
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">👁️</div> <!-- Changed from 🔐 to eye -->
+							<h3>Computer Vision Services</h3>
+						</div>
+						<p>OCR, object detection, face/emotion, license plates, industrial vision, AI surveillance. </p>
+					</div>
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">📊</div> <!-- Changed from 🔐 to chart -->
+							<h3>Data Engineering & Analytics</h3>
+						</div>
+						<p>ETL, data lakes, warehouses, real-time pipelines, BI tools (Power BI, Tableau, Looker). </p>
+					</div>			
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🧠</div> <!-- Changed from 🔐 to brain -->
+							<h3>Generative AI & Agentic AI</h3>
+						</div>
+						<p>LLM chatbots, RAG, embeddings, custom tuning, AI co-pilots for CRM/ERP/dev tools.  </p>
+					</div>
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🧪</div> <!-- Changed from 🔐 to lab flask -->
+							<h3>QA & Testing Services</h3>
+						</div>
+						<p>Manual, automation, API, performance, security testing with full coverage tooling. </p>
+					</div>	
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🛡️</div> <!-- Changed from 🔐 to shield -->
+							<h3>Cybersecurity & Compliance</h3>
+						</div>
+						<p>Pen testing, IAM, SOC 2, HIPAA, GDPR, code audits, SIEM, threat detection.  </p>
+					</div>						
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🔗</div> <!-- Changed from 🔐 to chain link -->
+							<h3>API & Integration Services</h3>
+						</div>
+						<p>REST, GraphQL, gateways, Kafka, 3rd-party integrations, webhook-based systems. </p>
+					</div>	
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">⚡</div> <!-- Changed from 🔐 to lightning -->
+							<h3>Low-Code / No-Code Solutions</h3>
+						</div>
+						<p>Internal dashboards, workflow builders, drag/drop tools (PowerApps, OutSystems).  </p>
+					</div>		
+										
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🎯</div> <!-- Changed from 🔐 to target -->
+							<h3>UI/UX Design & Frontend</h3>
+						</div>
+						<p>Wireframes, responsive layouts, accessibility audits, component libraries, design systems.  </p>
+					</div>		
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🏭</div> <!-- Changed from 🔐 to factory -->
+							<h3>Industry-specific Digital Solutions</h3>
+						</div>
+						<p>Insurance, Fintech, Retail, Logistics, Healthcare, Manufacturing — tailored digital tools. </p>
+					</div>		
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">🔬</div> <!-- Changed from 🔐 to microscope -->
+							<h3>Emerging Tech & R&D</h3>
+						</div>
+						<p>Blockchain, IoT, Digital Twins, AR/VR, voice assistants, edge computing innovation. </p>
+					</div>		
+
+					<div class="service-card glass">
+						<div class="service-header">
+							<div class="service-icon">👥</div> <!-- Changed from 🔐 to people -->
+							<h3>IT Consulting & Staff Augmentation</h3>
+						</div>
+						<p>Tech strategy, app support, dedicated dev/QA/PMs, 24x7 ops, transformation guidance.  </p>
+					</div>
+		
+                </section>
+            </div>
+        </div>
+    </div>
+	
+
+	
+	<!-- Case Studies PAGE -->
+<div id="casestudies" class="page">
+  <div class="container">
+    <div class="content-wrapper">
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Smarter Insurance Decisions Through Automation</h1>
+        <p></p>
+        <p>An insurance company in the Middle East was stuck with a slow, rule-heavy process that made it hard to keep up with the market. Every change meant manual updates, delays, and the risk of human error. By using AI to gather data automatically, identify risks faster, and update models in real time, the underwriting process became quicker, more accurate, and consistent — freeing staff to focus on high-value decisions and giving customers faster answers.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Insurance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Turning Credit Assessments from Slow to Streamlined</h1>
+        <p></p>
+        <p>A fast-growing lender in the Philippines was held back by an outdated, manual process for assessing credit risk. Slow decision-making, limited data access, and rigid rules made it hard to adapt to changing market conditions. With AI-driven risk models and automated data analysis, credit assessments became faster, more accurate, and tailored to the company’s strategy. This reduced the risk of defaults, improved portfolio quality, and gave the business a stronger competitive edge.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Finance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Modernizing Payments Platforms for Growth</h1>
+        <p></p>
+        <p>A leading U.S. payments provider was limited by an outdated platform that couldn’t scale, adapt, or meet modern compliance standards. Inefficient workflows, rising maintenance costs, and rigid technology slowed innovation. By adopting a re-engineered, cloud-enabled platform with modern architecture, streamlined processes, and improved governance, the business gained the flexibility to scale, cut development time and costs, improve user experience, and stay ahead of industry changes.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Finance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Bringing Modern Portals to Legacy Insurance Systems</h1>
+        <p></p>
+        <p>A major insurance provider in the Middle East and Africa needed to launch multiple digital portals quickly without fully replacing its legacy systems. Market demands, tight timelines, and limited experience with new technologies made this a challenge. By creating nimble, user-friendly portals that integrated seamlessly with existing systems, the solution delivered faster time-to-market, improved user satisfaction, and expanded access across customers, brokers, and employees — all while preserving prior technology investments and enabling future growth.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Insurance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Modernizing a Global Insurance Core for the Digital Era</h1>
+        <p></p>
+        <p>A leading $10B insurance provider operating across MENA and Europe faced the challenge of running a feature-rich but outdated monolithic core application that was slow, costly, and hard to scale. Competitive pressure and shifting technology demands made modernization urgent. Through a phased approach, the core was re-architected with microservices, modular front-end migrations, and cloud-ready, configurable components. This improved maintainability, flexibility, and scalability, boosted process efficiency by 5x, cut feature delivery time by two-thirds, and reduced costs by 30% per feature — all while enhancing customer experience and laying the foundation for future growth.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Insurance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Real-Time Logistics Visibility with Cloud-Native Solutions</h1>
+        <p></p>
+        <p>A U.S.-based logistics aggregator needed to scale quickly while improving shipment visibility and streamlining integrations with multiple carriers and partners. Legacy systems couldn’t keep pace, and the lack of real-time tracking slowed operations and impacted customer experience. By leveraging a cloud-native, serverless architecture with AWS services for event-driven workflows, real-time analytics, and secure integrations, the platform gained the flexibility to scale on demand, deliver accurate shipment updates instantly, and reduce integration complexity — all while ensuring robust security and compliance.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Logistics</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Faster Banking Features Without Disrupting the Core</h1>
+        <p></p>
+        <p>A Germany-based core banking software provider needed to speed up feature delivery and handle custom implementations without straining its core development team. The challenge included a shortage of specialized cloud engineering skills, integration hurdles between on-premise and cloud environments, and rising implementation costs. By adopting a hybrid cloud model with dedicated development teams, best-practice integration standards, and automation for testing and deployment, the solution delivered faster feature rollouts, improved cost efficiency, and strengthened security and compliance — all while maintaining seamless banking operations.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Finance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Simplifying Financial API Integrations</h1>
+        <p></p>
+        <p>A fintech company in Africa needed to connect its lending and mobile wallet platforms with payment gateways, telecom providers, and other financial services. Existing APIs were slow to integrate, hard to scale, and lacked built-in compliance features. By redesigning the API infrastructure for scalability and adopting robust API management tools, integrations became faster, more secure, and easier to maintain. Automated testing, agile development, and clear documentation further reduced integration time, improved performance, and accelerated the rollout of new features.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Finance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Seamless Logistics Integrations with Open-Source APIs</h1>
+        <p></p>
+        <p>A nationwide U.S. logistics provider faced complex, error-prone integrations with shipping carriers, customs authorities, and supply chain platforms. Manual processes slowed operations, inaccurate data caused delays, and the existing setup couldn’t scale to support growth. By implementing an open-source API integration tool with customizable workflows and real-time data synchronization, the solution streamlined processes, improved data accuracy, reduced manual errors, and enhanced scalability — enabling faster decision-making, better customer experiences, and the flexibility to integrate with new partners efficiently.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Logistics</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Scaling QA for a Global Clinical Research Leader</h1>
+        <p></p>
+        <p>A leading $5B clinical research organization in Ireland needed to scale its quality assurance capabilities to keep pace with a growing portfolio of projects. Coordinating across multiple vendors, aligning testing practices with internal standards, and managing complex test data were significant challenges. By implementing a structured testing strategy with strong communication loops, realistic test environments, strict data privacy controls, and collaborative workflows, the solution improved testing efficiency, enhanced software quality, and ensured consistent, secure, and timely delivery of project outcomes.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Clinical</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Boosting Insurance Software Quality with Automation Testing</h1>
+        <p></p>
+        <p>A North America–based startup in insurance regulatory solutions needed to improve the quality, speed, and reliability of its software testing to meet aggressive go-to-market goals. Complex integrations, legacy system compatibility, and the need for high-performance API testing created significant challenges. By introducing reusable automated test suites, integrating testing into CI/CD pipelines, and validating performance at scale, the solution streamlined testing workflows, improved defect detection, and accelerated release cycles — resulting in faster delivery, higher software quality, and better customer satisfaction.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Insurance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>Streamlining Payments Development with CI/CD Automation</h1>
+        <p></p>
+        <p>A North America–based payments startup needed to streamline its software development and deployment processes to support growth and improve delivery speed. Collaboration gaps, manual workflows, and inconsistent environments were slowing progress. By adopting enterprise DevOps practices — including CI/CD pipelines, infrastructure as code, automated testing, and proactive monitoring — the solution improved team collaboration, reduced errors, and accelerated release cycles. This resulted in more efficient workflows, higher software quality, and faster time-to-market for new features.</p>
+        <h4 style="color:black;font-weight:bold;">Sector: Finance</h4>
+      </section>
+
+      <section class="service-card glass" style="margin-bottom: 2rem;">
+        <h1>And many more!</h1>
+        <p></p>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+
+	
+	
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+                    <div class="contact-form glass">
+                        <h2>Get In Touch</h2>
+						<form id="contactForm"
+							  action="https://formspree.io/f/xrbkadon"
+							  method="POST"
+							  accept-charset="UTF-8">
+
+						  <div class="form-group">
+							<label for="full-name">Full Name</label>
+							<input type="text" id="full-name" name="name"
+								   placeholder="Enter your full name"
+								   required autocomplete="name">
+						  </div>
+
+						  <div class="form-group">
+							<label for="email">Email Address</label>
+							<!-- Formspree expects the user's email in "email" -->
+							<input type="email" id="email" name="email"
+								   placeholder="Enter your email"
+								   required autocomplete="email" inputmode="email">
+						  </div>
+
+						  <div class="form-group">
+							<label for="subject">Subject</label>
+							<input type="text" id="subject" name="subject"
+								   placeholder="What's this about?">
+						  </div>
+
+						  <div class="form-group">
+							<label for="message">Message</label>
+							<textarea id="message" name="message"
+									  placeholder="Tell us about your project..."
+									  required></textarea>
+						  </div>
+
+						  <!-- Optional: customize email subject line -->
+						  <input type="hidden" name="_subject" value="New MinMax Technology Email!">
+
+						  <!-- Honeypot for spam bots -->
+						  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+						  <!-- Optional: redirect after success -->
+						  <input type="hidden" name="_next" value="https://minmaxtechnology.com/thank-you.html">
+
+						  <!-- Use a plain submit input to avoid JS intercepts -->
+						  <input type="submit" value="Send Message" class="cta-button">
+						</form>
+
+
+                    </div>
+
+                    <div class="contact-info glass">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <p>Sales@MinMaxTechnology.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- SINGLE FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+					<div class="footer-links">
+						<a href="#" onclick="showPage('about')">About Us</a>
+						<a href="#" onclick="showPage('services')">Services</a>
+						<a href="#" onclick="showPage('casestudies')">Case Studies</a>
+						<a href="#" onclick="showPage('contact')">Contact</a>
+					</div>
+                    <div class="copyright">
+                        &copy; 2025 MinMax Technology LLC. All rights reserved.</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script src="minmaxjs.js"></script>
+</body>
+</html>

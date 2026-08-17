@@ -19,11 +19,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const homePage = document.getElementById('home');
     homePage.appendChild(footer);
 
-    // Add My Simple TCG! to Past Projects, directly before the closing "And many more!" card.
+    // Add My Simple TCG! to the top of Past Projects.
     const caseStudies = document.querySelector('#casestudies .content-wrapper');
     if (caseStudies && !document.getElementById('my-simple-tcg-project')) {
         const cards = Array.from(caseStudies.querySelectorAll(':scope > section.service-card'));
-        const finalCard = cards.find(card => card.querySelector('h1')?.textContent.trim() === 'And many more!');
+        const firstCard = cards[0];
         const tcgCard = document.createElement('section');
         tcgCard.id = 'my-simple-tcg-project';
         tcgCard.className = 'service-card glass';
@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
             <h4 style="color:black;font-weight:bold;">Sector: Mobile Gaming</h4>
             <a href="privacy.html" class="cta-button">Privacy Policy</a>
         `;
-        if (finalCard) caseStudies.insertBefore(tcgCard, finalCard);
+        if (firstCard) caseStudies.insertBefore(tcgCard, firstCard);
         else caseStudies.appendChild(tcgCard);
     }
 });

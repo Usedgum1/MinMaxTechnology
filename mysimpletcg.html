@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Simple TCG! | iOS Game</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%}body{font-family:Arial,Helvetica,sans-serif;color:#fff;background:radial-gradient(circle at 50% 86%,rgba(130,154,185,.35),transparent 42%),radial-gradient(circle at 12% 18%,rgba(87,113,179,.42),transparent 30%),linear-gradient(145deg,#17213f 0%,#202c4d 48%,#3b4960 100%);padding:44px 18px}.wrap{width:min(980px,100%);margin:auto}.welcome{text-align:center;font-weight:900;letter-spacing:3px;text-shadow:0 3px 0 #000;font-size:14px}.logo{text-align:center;margin:8px 0 24px;font-size:clamp(38px,8vw,70px);font-weight:900;line-height:1;letter-spacing:-2px;text-shadow:-3px -3px 0 #05070d,3px -3px 0 #05070d,-3px 3px 0 #05070d,3px 3px 0 #05070d,0 7px 0 #05070d}.logo span{color:#f5df68}.panel{background:linear-gradient(#586273,#414958);border:4px solid #080a0f;border-radius:13px;box-shadow:0 7px 0 rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.18);overflow:hidden}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:0}.hero-copy{padding:26px 28px;background:linear-gradient(#506da8,#344a82);border-right:4px solid #080a0f}.hero-card{padding:26px;background:linear-gradient(#638356,#47663d)}h1{margin:0;font-size:clamp(28px,5vw,44px);text-shadow:0 3px 0 #000;line-height:1.05}.subtitle{margin:12px 0 0;font-size:16px;font-weight:bold;line-height:1.45}.tag-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.tag{display:inline-block;padding:7px 10px;background:rgba(8,10,15,.45);border:2px solid #080a0f;border-radius:8px;font-size:12px;font-weight:900}.pack-art{height:100%;min-height:250px;display:grid;place-items:center}.card-stack{position:relative;width:min(260px,70vw);height:300px}.game-card{position:absolute;width:150px;height:210px;background:#4f5968;border:4px solid #090b0f;border-radius:12px;box-shadow:0 7px 0 rgba(0,0,0,.45);transform:rotate(var(--rot)) translate(var(--x),var(--y));display:flex;flex-direction:column;justify-content:space-between;padding:12px}.game-card:nth-child(1){--rot:-10deg;--x:0;--y:30px;background:#53667e}.game-card:nth-child(2){--rot:8deg;--x:76px;--y:5px;background:#7750aa}.game-card:nth-child(3){--rot:-2deg;--x:42px;--y:58px;background:#bd9840}.card-name{height:21px;background:#9ca5b4;color:#111;border:2px solid #111;border-radius:5px;font-size:10px;font-weight:900;text-align:center;line-height:17px}.card-icon{height:88px;display:grid;place-items:center;background:#323946;border:3px solid #111;border-radius:5px;font-size:42px}.card-set{text-align:center;font-size:11px;font-weight:900;text-shadow:0 2px #000}.content{padding:24px}.intro{border:3px solid #090b0f;border-radius:10px;padding:17px 18px;background:rgba(22,28,42,.48);margin-bottom:18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{border:3px solid #090b0f;border-radius:10px;padding:17px 18px;background:rgba(22,28,42,.55)}.feature strong{display:block;color:#f5df68;font-size:17px;text-shadow:0 2px #000;margin-bottom:7px}.feature p,.intro p{margin:0;line-height:1.55;font-size:14px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.button{display:inline-block;padding:11px 16px;background:#f5df68;color:#111;text-decoration:none;font-weight:900;border:3px solid #111;border-radius:8px;box-shadow:0 3px #111}.button.secondary{background:#5876b8;color:#fff;text-shadow:0 2px #000}.button.green{background:#6c9a5c;color:#fff;text-shadow:0 2px #000}.footer{text-align:center;padding:22px 12px 2px;font-size:12px;opacity:.75}a{color:#f5df68;font-weight:bold}@media(max-width:760px){body{padding:30px 12px}.hero{grid-template-columns:1fr}.hero-copy{border-right:0;border-bottom:4px solid #080a0f}.grid{grid-template-columns:1fr}.content{padding:16px}.card-stack{height:260px}.game-card{width:132px;height:186px}.game-card:nth-child(2){--x:62px}.game-card:nth-child(3){--x:30px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="welcome">WELCOME TO</div>
+  <div class="logo">My Simple <span>TCG!</span></div>
+  <div class="panel">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>A cozy card shop game for iPhone.</h1>
+        <p class="subtitle">Rip packs, build a collection, buy and sell cards, restore finds, hire staff, and grow a small card shop one lucky pull at a time.</p>
+        <div class="tag-row">
+          <span class="tag">iOS Game</span>
+          <span class="tag">Offline Play</span>
+          <span class="tag">No Account</span>
+          <span class="tag">No Ads</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="pack-art" aria-hidden="true">
+          <div class="card-stack">
+            <div class="game-card"><div class="card-name">Common Sun</div><div class="card-icon">☀</div><div class="card-set">SPACE SET<br>ID: 35/50</div></div>
+            <div class="game-card"><div class="card-name">Rare Pack</div><div class="card-icon">🎴</div><div class="card-set">SHOP FIND<br>SEALED</div></div>
+            <div class="game-card"><div class="card-name">Legendary Pull</div><div class="card-icon">★</div><div class="card-set">COLLECTION<br>NEW CARD</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="content">
+      <div class="intro">
+        <p><strong>My Simple TCG!</strong> is a single-player trading card collecting game built around the everyday fun of opening packs, finding value, making deals, and slowly turning a tiny card habit into a real shop.</p>
+      </div>
+      <div class="grid">
+        <section class="feature"><strong>Collect</strong><p>Open packs, chase variants, sort your binder, and build sets across a growing card catalog.</p></section>
+        <section class="feature"><strong>Trade</strong><p>Buy singles, haggle at the flea market, evaluate walk-in offers, and decide when a deal is worth the risk.</p></section>
+        <section class="feature"><strong>Build</strong><p>Run your shop, list cards for sale, wash dishes for quick cash, restore damaged cards, and unlock new systems as you play.</p></section>
+      </div>
+      <div class="actions">
+        <a class="button green" href="mysimpletcg-support.html">Player Support</a>
+        <a class="button" href="privacy.html">Privacy Policy</a>
+        <a class="button secondary" href="index.html">MinMax Technology</a>
+      </div>
+      <div class="footer">My Simple TCG! • iOS Game<br>MinMax Technology LLC</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
